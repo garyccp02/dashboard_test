@@ -13148,35 +13148,27 @@ div#notebook {
     
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Collecting matplotlib
-  Using cached matplotlib-3.3.1-cp37-cp37m-manylinux1_x86_64.whl (11.6 MB)
-Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.3 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (2.4.7)
+<pre>Requirement already satisfied: matplotlib in /srv/conda/envs/notebook/lib/python3.7/site-packages (3.3.1)
 Requirement already satisfied: python-dateutil&gt;=2.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (2.8.1)
-Requirement already satisfied: numpy&gt;=1.15 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (1.19.1)
-Collecting pillow&gt;=6.2.0
-  Using cached Pillow-7.2.0-cp37-cp37m-manylinux1_x86_64.whl (2.2 MB)
-Collecting cycler&gt;=0.10
-  Using cached cycler-0.10.0-py2.py3-none-any.whl (6.5 kB)
-Collecting kiwisolver&gt;=1.0.1
-  Using cached kiwisolver-1.2.0-cp37-cp37m-manylinux1_x86_64.whl (88 kB)
 Requirement already satisfied: certifi&gt;=2020.06.20 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (2020.6.20)
+Requirement already satisfied: cycler&gt;=0.10 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: pillow&gt;=6.2.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (7.2.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (1.2.0)
+Requirement already satisfied: numpy&gt;=1.15 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (1.19.1)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.3 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib) (2.4.7)
 Requirement already satisfied: six&gt;=1.5 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from python-dateutil&gt;=2.1-&gt;matplotlib) (1.15.0)
-Installing collected packages: pillow, cycler, kiwisolver, matplotlib
-Successfully installed cycler-0.10.0 kiwisolver-1.2.0 matplotlib-3.3.1 pillow-7.2.0
-Processing ./.cache/pip/wheels/b9/36/27/d61b9f1327012961fa31f05a20b190f836dd3fcb1c0264177b/mpld3-0.5.1-py3-none-any.whl
+Requirement already satisfied: mpld3 in /srv/conda/envs/notebook/lib/python3.7/site-packages (0.5.1)
 Requirement already satisfied: jinja2 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from mpld3) (2.11.2)
 Requirement already satisfied: matplotlib in /srv/conda/envs/notebook/lib/python3.7/site-packages (from mpld3) (3.3.1)
 Requirement already satisfied: MarkupSafe&gt;=0.23 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from jinja2-&gt;mpld3) (1.1.1)
+Requirement already satisfied: numpy&gt;=1.15 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (1.19.1)
 Requirement already satisfied: certifi&gt;=2020.06.20 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (2020.6.20)
 Requirement already satisfied: python-dateutil&gt;=2.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (2.8.1)
-Requirement already satisfied: numpy&gt;=1.15 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (1.19.1)
-Requirement already satisfied: cycler&gt;=0.10 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (0.10.0)
+Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.3 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (2.4.7)
 Requirement already satisfied: kiwisolver&gt;=1.0.1 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (1.2.0)
 Requirement already satisfied: pillow&gt;=6.2.0 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (7.2.0)
-Requirement already satisfied: pyparsing!=2.0.4,!=2.1.2,!=2.1.6,&gt;=2.0.3 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (2.4.7)
+Requirement already satisfied: cycler&gt;=0.10 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from matplotlib-&gt;mpld3) (0.10.0)
 Requirement already satisfied: six&gt;=1.5 in /srv/conda/envs/notebook/lib/python3.7/site-packages (from python-dateutil&gt;=2.1-&gt;matplotlib-&gt;mpld3) (1.15.0)
-Installing collected packages: mpld3
-Successfully installed mpld3-0.5.1
 </pre>
 </div>
 </div>
@@ -13385,10 +13377,34 @@ Successfully installed mpld3-0.5.1
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>git add -A
-<span class="o">!</span>git commit -m <span class="s2">&quot;Publish nb&quot;</span>
+<span class="o">!</span>git commit -m <span class="s2">&quot;Update SIR&quot;</span>
+<span class="o">!</span>git push origin master
+<span class="o">!</span>hell0venus
+<span class="o">!</span>SALAMANDERSYANKEE
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[master 18ad950] Update SIR
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+Username for &#39;https://github.com&#39;: ^C
+/bin/bash: hell0venus: command not found
+/bin/bash: SALAMANDERSYANKEE: command not found
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
